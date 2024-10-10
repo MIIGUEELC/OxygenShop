@@ -1,0 +1,122 @@
+.contact {
+    padding-bottom: 2.9em;
+
+    &__info {
+        width: 85%;
+        margin: 0 auto;
+
+        &__title {
+            font-family: "Raleway", sans-serif;
+            font-size: 2.5em;
+            font-weight: 400;
+            margin-bottom: 0.1em;
+        }
+
+        &__subtitle {
+            font-weight: 400;
+            margin-bottom: 2em;
+        }
+
+        &__types-container {
+            margin-bottom: 3.3em;
+
+            &__type {
+                margin-bottom: 0.9em;
+
+                &__description-img {
+                    margin-right: 0.4em;
+                }
+
+                &__contact {
+                    color: #A5A5A5;
+                }
+
+                & > * {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    &__form {
+        width: 85%;
+        margin: 0 auto;
+
+        &__text-input {
+            width: 100%;
+            display: block;
+            margin-bottom: 2.5em;
+            border: none;
+            border-bottom: 1px solid #95989A;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        &__consent {
+            display: block;
+            margin-bottom: 1em;
+            position: relative;
+
+            &__label {
+                font-size: 0.75em;
+                font-weight: 400;
+                color: #707070;
+                margin-left: 2.5em;
+            }
+
+            &__checkbox {
+                display: none;
+
+                &:checked + .contact__form__consent__custom-checkbox::before {
+                    
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    color: #08A6E4;
+                }
+            }
+
+            &__custom-checkbox {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 24px;
+                height: 24px;
+                border: 1px solid #95989A;
+                border-radius: 4px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__label--uppercase {
+            font-size: 0.7em;
+            font-weight: 600;
+            color: #08A6E4;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 0.6em;
+        }
+
+        &__submit-button {
+            display: block;
+            margin-left: auto;
+            padding: 1.3em 7em;
+            background-color: #08A6E4;
+            color: white;
+            border: none;
+            border-radius: 35px;
+            font-size: 0.812em;
+            filter: drop-shadow(5px 10px 14px #07ACE64A);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
