@@ -119,4 +119,91 @@
             }
         }
     }
+}@media only screen and (min-width: 1000px) {
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Alinea los elementos arriba */
+        padding: 4em 8em; 
+
+        &__info {
+            width: 40%; 
+            margin: 0;
+
+            &__title {
+                font-size: 3em; 
+            }
+
+            &__subtitle {
+                font-size: 1.2em; 
+                margin-bottom: 2.5em;
+            }
+
+            &__types-container {
+                display: flex; /* Para alinear los iconos de contacto horizontalmente */
+                flex-wrap: wrap; 
+                margin-bottom: 3.3em; 
+                &__type {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 2em; 
+
+                    &__description-img {
+                        margin-right: 0.4em;
+                        width: 30px; 
+                        height: auto;
+                    }
+
+                    &__contact {
+                        font-size: 1.1em; 
+                        color: #707070;
+                    }
+                }
+            }
+        }
+
+        &__form {
+            width: 50%; /* Ajusta el ancho del formulario */
+            margin: 0;
+
+            &__text-input {
+                margin-bottom: 2em; 
+                font-size: 1.1em; 
+            }
+
+            &__consent {
+                margin-bottom: 1.5em;
+                display: flex;
+                align-items: center;
+
+                &__label {
+                    font-size: 1em; /* Ajusta el tamaño del texto del consentimiento */
+                    margin-left: 1.5em;
+                    max-width: 90%; /* Limita el ancho del texto */
+                }
+
+                &__custom-checkbox {
+                    width: 20px;
+                    height: 20px;
+                    top: 0; 
+                    left: 0;
+                }
+            }
+
+            &__submit-button {
+                margin-left: auto;
+                padding: 1em 4em;
+                font-size: 1em; 
+                background-color: #08A6E4;
+                color: white;
+                border: none;
+                border-radius: 35px;
+                filter: drop-shadow(5px 10px 14px rgba(7, 172, 230, 0.29));
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }

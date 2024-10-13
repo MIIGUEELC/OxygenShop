@@ -12,7 +12,7 @@
     &__content {
         width: 100%;
 
-        //estilos a los botones
+        
 
         button {
             border-radius: 1.5em; 
@@ -140,100 +140,61 @@
 @media only screen and (min-width: 1000px) {
     .pricing {
         &__title {
-            padding-bottom: .6em;
+            margin-top: 3em;
         }
 
         &__content {
             display: flex;
             justify-content: center;
-            gap: 3em;
-            margin-top: 1em; 
+
+            button {
+                transform: translateY(30px);
+
+                &.red {
+                    transform: translateY(35px);
+                }
+            }
+
+            &__item:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px #6495ED;
+            }
 
             &__item {
-                flex: 1;
-                padding: 2em;
-                margin-top: 0;
-                margin-bottom: 0;
-                border-radius: 1em;
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-                &:hover {
-                    transform: scale(1.05);
-                    box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.15);
-                }
-
-                &.red:hover {
-                    box-shadow: 5px 10px 27px 0px rgba(235, 71, 110, 0.29);
-                }
-
-                &.blue:hover {
-                    box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
-                }
-
-                &.green:hover {
-                    box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 0.29);
-                }
+                margin: 5em 2em;
+                height: auto;
+                width: 400px;
 
                 &__half {
                     width: 100%;
                     text-align: center;
-                    
-
-                    ul {
-                        padding: 0;
-                        margin: 1em 0; // 
-
-                        li {
-                            margin: 0.6em 0; // Menor margen entre los ítems
-                            font-size: 1em;
-                            list-style: none;
-
-                        }
-                    }
+                    position: static;
 
                     &--title {
-                        font-size: 1em;
-                        margin-bottom: .5em;
+                        margin-top: 3em;
                     }
 
                     &--price {
-                        font-size: 1.5em;
-                        margin: 0;
+                        &.red {
+                            margin-top: 0.5em;
+                        }
                     }
 
                     &--text {
-                        font-size: 1em;
-                        padding-bottom: 1em;
-                        
-                    }
-                }
-
-                &__button {
-                    display: inline-block;
-                    padding: 1em 3em;
-                    border-radius: 1.5em;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                    position: relative;
-                    bottom: -1em; 
-
-                    &.red {
-                        background-color: #EB476E;
+                        margin-top: 1em;
                     }
 
-                    &.blue {
-                        background-color: #07ACE6;
-                    }
-
-                    &.green {
-                        background-color: #55DFB4;
+                    ul {
+                        li {
+                            text-align: center;
+                            margin: 1.5em 0;
+                        }
                     }
                 }
             }
         }
     }
 }
+
 
   
