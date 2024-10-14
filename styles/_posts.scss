@@ -123,7 +123,7 @@
             &__image-container {
                 &--increase {
                     margin: 0;
-                    width: 40%;
+                    width: 80%;
                     height: 100%;
                     display: flex;
                     justify-content: flex-end;
@@ -154,7 +154,7 @@
                         left: 50%;
                         transform: translate(calc(-50% + 1em), calc(-50% + 2em));
                         width: 80%;
-                        max-width: 23em;
+                        max-width: 53em;
                     }
                 }
 
