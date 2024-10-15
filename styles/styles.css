@@ -82,9 +82,13 @@ body {
   position: relative;
   padding-top: 2em;
 }
-.header__image-container__labtop-image {
+.header__image-container__labtop-image--mobile {
   width: 100%;
   height: auto;
+  display: block;
+}
+.header__image-container__labtop-image--desktop {
+  display: none;
 }
 @media only screen and (min-width: 1000px) {
   .header__navigation__list {
@@ -92,14 +96,25 @@ body {
     justify-content: space-around;
     margin-right: 2em;
   }
-  .header__navigation--menu-icon--icon-symbol {
+  .header__navigation--menu-icon-symbol {
     display: none;
   }
-  .header__sell-more {
+  .header__navigation__sell-more {
     margin: 5em 0;
   }
-  .header__sell-more__button {
+  .header__navigation__sell-more__button {
     width: 31.25em;
+  }
+  .header__image-container__labtop-image--mobile {
+    display: none;
+  }
+  .header__image-container__labtop-image--desktop {
+    display: block;
+    width: 100vw;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
   }
 }
 
