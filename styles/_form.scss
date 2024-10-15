@@ -67,31 +67,16 @@
                 margin-left: 2.5em;
             }
 
-            &__checkbox {
-                display: none;
+             &__checkbox {
+           
+                     display: inline-block;
+                     width: 5%;
+                     text-align: center;
+                     color: #08A6E4;
+                 }
+             
 
-                &:checked + .contact__form__consent__custom-checkbox::before {
-                    
-                    display: inline-block;
-                    width: 100%;
-                    text-align: center;
-                    color: #08A6E4;
-                }
-            }
-
-            &__custom-checkbox {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 24px;
-                height: 24px;
-                border: 1px solid #95989A;
-                border-radius: 4px;
-            }
-
-            &:hover {
-                cursor: pointer;
-            }
+            
         }
 
         &__label--uppercase {
@@ -119,7 +104,8 @@
             }
         }
     }
-}@media only screen and (min-width: 1000px) {
+}
+@media only screen and (min-width: 1000px) {
     .contact {
         display: flex;
         justify-content: space-between;
@@ -143,6 +129,7 @@
                 display: flex; /* Para alinear los iconos de contacto horizontalmente */
                 flex-wrap: wrap; 
                 margin-bottom: 3.3em; 
+
                 &__type {
                     display: flex;
                     align-items: center;

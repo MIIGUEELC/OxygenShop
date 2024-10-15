@@ -744,25 +744,10 @@ body {
   margin-left: 2.5em;
 }
 .contact__form__consent__checkbox {
-  display: none;
-}
-.contact__form__consent__checkbox:checked + .contact__form__consent__custom-checkbox::before {
   display: inline-block;
-  width: 100%;
+  width: 5%;
   text-align: center;
   color: #08A6E4;
-}
-.contact__form__consent__custom-checkbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  border: 1px solid #95989A;
-  border-radius: 4px;
-}
-.contact__form__consent:hover {
-  cursor: pointer;
 }
 .contact__form__label--uppercase {
   font-size: 0.7em;
