@@ -123,6 +123,12 @@
     }
 
     @media only screen and (min-width: 1000px) {
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
         &__title {
             text-align: center;
             font-family: Raleway, sans-serif;
@@ -137,7 +143,7 @@
             width: 7.5rem;
             text-align: center;
             display: inline-block;
-            margin-left: 22vw;
+            
             margin-top: 3rem;
             padding-bottom: 8rem;
 

@@ -18,7 +18,7 @@
 
         &--menu-icon {
             position: absolute;
-            top: 1.7em;
+            top: 1em;
             right: 1.8em;
             color: #08A6E4;
 
@@ -94,10 +94,23 @@
     // Media query para escritorio
     @media only screen and (min-width: 1000px) {
         &__navigation {
-            &__list {
+            &__list{
+                list-style: none;
                 display: flex;
-                justify-content: space-around;
-                margin-right: 2em;
+                &__item{
+                    padding: 2.3em .5em;             
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 700;
+                    font-size: 0.7rem;
+                    line-height: 0.9rem;
+                    letter-spacing: 0.2rem;
+                    color: #A5A5A5;
+                    margin-right: 8em;
+                    &--selected{
+                        color: #000000;
+                        border-bottom: 4px solid #08A6E4;
+                    }
+                }
             }
 
             &--menu-icon {
